@@ -25,15 +25,6 @@ app.use(logErrors);
 app.use(boomErrorHandler);
 app.use(errorHandler);
 
-
-app.get('/', (req, res) => {
-  res.send("hola mi server en express")
-});
-
-app.get('/nueva-ruta', (req, res) => {
-  res.send("hola, soy una nueva ruta")
-});
-
 app.listen(port, () => {
   console.log("mi port " + port)
 });

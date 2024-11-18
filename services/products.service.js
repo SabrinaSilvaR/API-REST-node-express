@@ -58,7 +58,7 @@ class ProductsServices {
       ...product,
       ...changes
     };
-    return this.products[index]; // en la posicion que encuentre el objeto haga el cambio
+    return this.products[index]; 
   };
 
   async delete(id) {
